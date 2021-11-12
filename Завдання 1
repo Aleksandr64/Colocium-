@@ -1,0 +1,23 @@
+#include <ctype.h>
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+    int K = 1;
+    int q = 1;
+    int N = get_int("N: ");
+    if (N > 1)
+    {
+        while (q < N)
+        {
+            K++;
+            q = q + K;
+        }
+        printf("K: %i\n", K);
+    }
+    else
+    {
+        printf("Помилка\n");
+    }
+}
