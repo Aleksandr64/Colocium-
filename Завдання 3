@@ -1,0 +1,60 @@
+#include<cs50.h>
+#include<stdio.h>
+
+int main(void)
+{
+    int months;
+    months = get_int("Число: ");
+
+// Випадково зробив з 4кн завдання а часу не було переробляти        
+        
+        if( months > 0  &&  months < 13)
+        {
+            switch(months)
+            {
+            case 1:
+                printf("Зима\n");
+                break;
+             case 2:
+                printf("Зима\n");
+                break;
+             case 3:
+                printf("Весна\n");
+               break;
+             case 4:
+                printf("Весна\n");
+               break;
+             case 5:
+                printf("Весна\n");
+                break;
+             case 6:
+                printf("Літо\n");
+                break;
+             case 7:
+                printf("Літо\n");
+                break;
+             case 8:
+                printf("Літо\n");
+                break;
+             case 9:
+                printf("Осінь\n");
+                break;
+             case 10:
+                printf("Осінь\n");
+                break;
+             case 11:
+                printf("Осінь\n");
+                break;
+             case 12:
+                printf("Зима\n");
+                break;
+            }
+                
+        }
+        else
+        {
+            printf("Помилка\n");
+        }
+
+
+}
