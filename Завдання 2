@@ -1,0 +1,22 @@
+#include <ctype.h>
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+    int a = get_int("Перше: ");
+    int b = get_int("Друге: ");
+    int s = 0;
+    if (a < b)
+    {
+    for (int i = a + 1; i < b; i++)
+    {
+        s = s + i;
+    }
+    printf("Сума: %i\n", s);
+    }
+    else
+    {
+        printf("Помилка\n");
+    }
+}
